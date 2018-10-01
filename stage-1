@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WWE superstar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="shree.css">
+    
+</head>
+<body>
+<div class="header">
+    <h1>------WWE------</h1>
+    <p>A website for WWE fans</p>
+</div>
+<div class="navbar">
+    <a href="#">Superstars</a>
+    <a href="#">Divas</a>
+    <a href="#">upcoming Events</a>
+    <a href="#">Live Events</a>
+    <a href="#" class="right">About</a>
+    <div class="dropdown">
+    <button class="dropbtn">More
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Tickets & Events</a>
+      <a href="#">Shop</a>
+      <a href="#">training centers</a>
+    </div>
+  </div>
+</div>
+<div>
+  <img class="mySlides" src="C:\Users\shiva_000\Desktop\one.jpg" 
+
+style="width:100%">
+  <img class="mySlides" src="C:\Users\shiva_000\Desktop\two.jpg" 
+
+style="width:100%">
+  <img class="mySlides" src="C:\Users\shiva_000\Desktop
+
+\three.jpg" style="width:100%">
+</div>
+<script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+  }
+</script>
+</body>
+</html>
